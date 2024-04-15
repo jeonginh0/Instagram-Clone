@@ -1,6 +1,6 @@
 package jeonginho.instagram.config;
 
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -22,7 +22,13 @@ public class SecurityConfig {
 
     @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-        http.authorizeHttpRequests((authorizeHttpRequests) -> authorizeHttpRequests
+        http
+                .csrf((csrfConfig) -> csrfConfig.disable())
+                .headers((headerConfig) -> headerConfig.frameOptions(frameOptionsConfig ->
+                        frameOptionsConfig.disable())
+                )
+                // autorizeHttpRequests -> authorizeRequests로 오타 수정 / authorizeRequests는 http요청에 대한 보안 구성 정의에 사용
+                .authorizeRequests((authorizeRequests) -> authorizeRequests
                         .requestMatchers("/", "/login", "/signup", "/style/**", "/js/**", "/img/**").permitAll())
                 .formLogin((formLogin) -> formLogin
                         .loginPage("/login")
@@ -36,8 +42,9 @@ public class SecurityConfig {
     }
 
     @Bean
-        //스프링 시큐리티의 인증을 담당, 사용자 인증시 앞에서 작성한 UserSecurityService 와 PasswordEncoder 를 사용
-    AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+    //스프링 시큐리티의 인증을 담당, 사용자 인증시 앞에서 작성한 UserSecurityService 와 PasswordEncoder 를 사용
+    protected AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
         return authenticationConfiguration.getAuthenticationManager();
     }
+
 }

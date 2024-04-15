@@ -73,6 +73,8 @@
     margin-right: 30px;
 }
 .profile .profile-right .name-group .cta {
+    display: flex;
+    align-items: center;
     margin-right: 10px;
     /*padding: 5px 9px;*/
     border: 1px solid rgba(123,123,123,0.42);;
@@ -582,9 +584,10 @@ button.submit-comment:focus {
 
 
 .cta {
+    display: flex;
     margin-right: 10px;
     margin-top: 20px;
-    height: 30px;
+    height: 40px;
     /*padding: 10px 10px*/
     border: 1px solid rgba(123,123,123,0.42);
     border-radius: 4px;
