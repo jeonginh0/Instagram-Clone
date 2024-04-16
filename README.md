@@ -1,4 +1,4 @@
-# JAVA Spring + MySQL Instagram Clone Coding
+#     JAVA Spring + MySQL Instagram Clone Coding
 
 <div align=center>
 <h3>:pencil2: Introduction </h3>
@@ -11,7 +11,7 @@ Spring 프레임워크의 학습 정도를 확인하기 위해 MySQl과 연동�
 <img src="https://img.shields.io/badge/apachetomcat-F8DC75?style=flat&logo=apachetomcat&logoColor=white"/>
 <img src="https://img.shields.io/badge/css-1572B6?style=flat&logo=css3&logoColor=white"/>
 <img src="https://img.shields.io/badge/html-E34F26?style=flat&logo=html5&logoColor=white"/>
-<img src="https://img.shields.io/badge/mariadb-003545?style=flat&logo=mariadb&logoColor=white"/>
+<img src="https://img.shields.io/badge/mysql-003545?style=flat&logo=mariadb&logoColor=white"/>
 
 </div>
 
