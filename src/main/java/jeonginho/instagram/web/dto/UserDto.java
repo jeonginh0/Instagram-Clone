@@ -14,7 +14,7 @@ public class UserDto {
     private String website;
     private String profileImgUrl;
 
-    public String getProfileImgUrl() {
+    public String getProfileImgUrl() { // getter, setter
         return profileImgUrl;
     }
 
