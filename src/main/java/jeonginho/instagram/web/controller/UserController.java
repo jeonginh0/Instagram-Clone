@@ -2,7 +2,7 @@ package jeonginho.instagram.web.controller;
 
 import jeonginho.instagram.config.auth.PrincipalDetails;
 import jeonginho.instagram.domain.user.User;
-import jeonginho.instagram.service.UserService;
+import jeonginho.instagram.web.service.UserService;
 import jeonginho.instagram.web.dto.UserUpdateDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;

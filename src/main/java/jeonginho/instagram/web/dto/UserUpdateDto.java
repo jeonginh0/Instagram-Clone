@@ -5,9 +5,36 @@ import lombok.*;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Getter
 @Data
 public class UserUpdateDto {
+
+    public String getProfileImgUrl() {
+        return profileImgUrl;
+    }
+
+    public String getWebsite() {
+        return website;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public long getId() {
+        return id;
+    }
 
     private long id;
     private String password;

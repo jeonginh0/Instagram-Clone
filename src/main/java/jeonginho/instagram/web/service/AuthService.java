@@ -1,4 +1,4 @@
-package jeonginho.instagram.service;
+package jeonginho.instagram.web.service;
 
 import jeonginho.instagram.domain.user.User;
 import jeonginho.instagram.domain.user.UserRepository;

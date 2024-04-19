@@ -1,7 +1,7 @@
 package jeonginho.instagram.web.controller;
 
 import jeonginho.instagram.domain.user.User;
-import jeonginho.instagram.service.AuthService;
+import jeonginho.instagram.web.service.AuthService;
 import jeonginho.instagram.web.dto.UserLoginDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
